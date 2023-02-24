@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>billiard_game-client</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div id="buttons">
+        <button id="invite">Invite player in current game</button>
+        <button id="leave">Leave this game</button>
+        <p>Votre pseudo : <span id="pseudo"></span>
+        <br>latence : <span id="latency"></span>ms</p>
+    </div>
+    <div id="invitation">
+        <p>Le joueur <span id="hote"></span> souhaite que vous rejoignez sa partie</p>
+        <button id="refuse">Refuser</button>
+        <button id="accept">Rejoindre</button>
+    </div>
+    <div id="lockBtn">
+        <button>Verrouiller la caméra sur la boule blanche</button>
+    </div>
+
+    <div id="unlockBtn">
+        <button>Déverrouiller la caméra</button>
+    </div>
+
+    <div id="shootBtn">
+        <button>Tirer (Maintenir pour varier la puissance)</button>
+    </div>
+
+    <progress id="jauge" value="0" max="100" low="0" high="100" optimum="50"></progress>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="Billard/Billard.ts"></script>
+</body>
+</html>

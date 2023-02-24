@@ -1,0 +1,119 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#buttons {
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+div#invitation {
+    z-index: 10;
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    inset: 0;
+    margin: auto;
+    text-align: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+}
+
+div#invitation button {
+    width: 40%;
+}
+div#invitation #refuse {
+    background-color: rgb(200, 150, 150);
+}
+div#invitation #accept {
+    background-color: rgb(150, 200, 157);
+}
+
+div p {
+    color: black;
+}
+
+div#lockBtn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    /* display: none; */
+}
+
+div#lockBtn button {
+    padding: 20px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+div#unlockBtn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+div#unlockBtn button {
+    padding: 20px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+div#shootBtn {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: 14%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+div#shootBtn button {
+    padding: 20px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+#jauge {
+    z-index: 10;
+    position: absolute;
+    bottom: 50%;
+    right: 5%;
+    transform: translate(+50%, -50%) rotate(-90deg);
+    height: 20px;
+    width: 200px;
+}
